@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RPG</title>
+  </head>
+
+  <body>
+    <div id="window">
+      <div id="head">
+        <h2>Random Password Generator</h2>
+      </div>
+
+
+      <div id="div-body">
+        
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="numbers"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Numbers(1,2,3,4,5,6,7,8,9,0)
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="uppercase"
+            
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Uppercase(A,B,C...)
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lowercase">
+            <label class="form-check-label" for="flexCheckDefault">
+              Lowercase(a,b,c...)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="symbols">
+            <label class="form-check-label" for="flexCheckChecked">
+              Symbols(@#%...)
+            </label>
+          </div>
+          
+          <!--------------------------------------------->
+
+          <select class="form-select" aria-label="Default select example" id="select-number">
+            <option selected value="4">How many numbers ? ( Default 4 )</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+          </select>
+          <!--------------------------------------------->
+          <!--------------------------------------------->
+
+          
+          
+          <!--------------------------------------------->
+          
+      </div>
+      <div id="buton-div">            
+        <div id="generate-buton-div">
+            <button class="btn btn-warning" id="generate_button">Generate</button>
+        </div>
+      </div>
+
+      <!--------------------------------------------->
+      <div id="output">         
+            
+            <textarea name="output" id="password-output" cols="42" rows="2"></textarea>
+                   
+      </div>
+      <!--------------------------------------------->
+
+      <div id="bottom">
+          <div id="copy_button"><button class="btn btn-success">Copy</button></div>
+          <div id="clear_button"><button class="btn btn-success">Clear</button></div>
+        
+      </div>
+
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
